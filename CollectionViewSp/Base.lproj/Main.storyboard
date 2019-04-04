@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QfV-VU-Bzc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="po0-ZE-R1I">
+            <objects>
+                <collectionViewController id="QfV-VU-Bzc" customClass="CollectionViewController" customModule="CollectionViewSp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" id="jwa-Mm-PaG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DTP-dg-8sW">
+                            <size key="itemSize" width="99" height="93"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="uCB-kk-sjZ" customClass="CollectionViewCell" customModule="CollectionViewSp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="99" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="93"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qu-WP-EPH">
+                                            <rect key="frame" x="8" y="8" width="83" height="77"/>
+                                            <color key="backgroundColor" red="0.72501070739999995" green="1" blue="0.33437223109999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="2Qu-WP-EPH" firstAttribute="top" secondItem="uCB-kk-sjZ" secondAttribute="top" constant="8" id="1ZX-yL-F5v"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Qu-WP-EPH" secondAttribute="bottom" constant="8" id="5Dh-8r-Um4"/>
+                                    <constraint firstItem="2Qu-WP-EPH" firstAttribute="leading" secondItem="uCB-kk-sjZ" secondAttribute="leading" constant="8" id="Yss-RO-Sgm"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Qu-WP-EPH" secondAttribute="trailing" constant="8" id="k46-hn-nPU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="myLabel" destination="2Qu-WP-EPH" id="k8h-ML-FD4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="QfV-VU-Bzc" id="q7U-ib-Bhe"/>
+                            <outlet property="delegate" destination="QfV-VU-Bzc" id="w77-w2-qqR"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8p-qe-xab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="-118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
